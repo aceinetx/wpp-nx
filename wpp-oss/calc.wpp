@@ -1,0 +1,36 @@
+fn main;
+
+  print "Enter 1st num: ";
+  scanln num1;
+  cast num1 float;
+
+  print "Enter operator: ";
+  scanln op;
+
+  print "Enter 2st num: ";
+  scanln num2;
+  cast num2 float;
+
+  var result = 0;
+
+  if op == "+"
+    cp result num1;
+    var result + num2;
+  end
+  if op == "-"
+    cp result num1;
+    var result - num2;
+  end
+  if op == "*"
+    cp result num1;
+    var result * num2;
+  end
+  if op == "/"
+    cp result num1;
+    var result / num2;
+  end
+
+  println "Result: $result^";
+
+  return 0;
+nf;

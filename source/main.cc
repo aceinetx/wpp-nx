@@ -1,6 +1,7 @@
 #include <cstdlib>
 
 #include "app.hh"
+#include <cstring>
 #include <filesystem>
 #include <imgui.h>
 #include <switch.h>
@@ -52,5 +53,5 @@ int main(int argc, char *argv[]) {
 
   ImGui_ImplDeko3d_Shutdown();
   ImGui::DestroyContext();
-  return 0;
+  exit(0);
 }

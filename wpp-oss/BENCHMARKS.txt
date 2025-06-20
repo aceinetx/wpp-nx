@@ -1,0 +1,22 @@
+Hardware:
+  Laptop: Huawei NBD-WXX9 (M1010)
+  CPU: 11th Gen Intel(R) Core(TM) i3-1115G4 (4) @ 4.10 GHz
+  GPU: Intel UHD Graphics G4 @ 1.25 GHz [Integrated]
+
+Software:
+  OS: Arch Linux x86_64
+  Kernel: Linux 6.13.3-arch1-1
+
+https://github.com/ViliowSs/1000-7-Watermelon-
+w/ diff:
+```
+9d8
+< sleep 0.2;
+```
+
+  wpp-oss:
+    0.004 seconds
+  wpp-py:
+    0.132 seconds
+ 
+  wpp-oss is 96.97% faster

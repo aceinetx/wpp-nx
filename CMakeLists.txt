@@ -17,6 +17,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED YES)
 add_executable(${TARGET}
   source/main.cc
 	source/app.cc
+	source/wpp_handlers.cc
+	source/wpp.c
   source/imgui_impl_deko3d.cpp
   ${IMGUI_DIR}/imgui.cpp
   ${IMGUI_DIR}/imgui_demo.cpp

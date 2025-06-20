@@ -1,0 +1,27 @@
+wpp-oss
+-------
+An ANSI C open-source version of watermelon++ (https://github.com/aceinetx/watermelon)
+The goal of this project is to rewrite watermelon++ in a faster, more portable lower-level language, which is C, and for you to explore it
+The code is mostly the same as in the original python version, but a lot of stuff is different, for example:
+- Functions are now stored in variables (which is actually a good thing that allows for more complex stuff)
+- wpp-oss does not have __pyexec
+- wpp-oss will not have these standard library namespaces:
+  - ImGui
+  - AutoHotkey
+  - RegEx
+  - scope
+  - timedvar
+
+Tested systems:
+- Arch linux
+- Android 10 (Termux)
+- Arch linux (Windows 11 WSL)
+- Windows 11 (msys2 ucrt64)
+
+Compilation requirements:
+- C compiler compatible with ANSI C (C89/C90)
+- C standard library for C99
+- Makefile (optional, for incremental compiling)
+
+Roadmap:
+- Standard library (std, winapi, array, hashmap namespaces)

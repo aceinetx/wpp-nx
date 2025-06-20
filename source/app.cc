@@ -25,7 +25,7 @@ static std::string text;
 static Program current_program;
 static wppExec *exec;
 static wppLexer *lexer;
-static pthread_t exec_thread_id;
+static std::thread exec_thread;
 std::string output;
 
 static bool running_program = false;
@@ -58,7 +58,7 @@ void RefreshPrograms() {
   }
 }
 
-void *ExecThread(void *) {
+void *ExecThread() {
   lexer = wpp_lexer_new(strdup((char *)readFile(current_program.path).c_str()));
   exec = wpp_exec_new(lexer);
 
@@ -91,13 +91,7 @@ void RunProgram(Program program) {
 
   output += "wpp: Running program " + current_program.path + "\n";
 
-  int result = pthread_create(&exec_thread_id, NULL, ExecThread, NULL);
-  if (result != 0) {
-    output += "wpp: Thread creation failed\n";
-    return;
-  }
-
-  pthread_detach(exec_thread_id);
+  ExecThread();
 }
 
 void RenderImGuiProgram() {

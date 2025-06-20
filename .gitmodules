@@ -1,0 +1,3 @@
+[submodule "submodules/wpp-oss"]
+	path = submodules/wpp-oss
+	url = https://github.com/aceinetx/wpp-oss

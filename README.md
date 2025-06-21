@@ -1,7 +1,7 @@
 # wpp-nx
 Port of watermelon++ to nintendo switch, code with watermelon++ anywhere!
 
-Images:
+Screenshots:
 <p float="left">
   <img title="Program explorer" src="/images/program_explorer.jpg" width=500>
   <img title="Program" src="/images/program.jpg" width=500>

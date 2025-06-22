@@ -1,5 +1,5 @@
 # wpp-nx
-Port of watermelon++ to nintendo switch, code with watermelon++ anywhere!
+Port of watermelon++ to nintendo switch, run watermelon++ anywhere!
 
 Screenshots:
 <p float="left">
